@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Fahkwang", sans-serif;
+    background-image: url(../img/astronaut-cat-moon-digital-art-4k-wallpaper-uhdpaper.com-261@0@j.jpg);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(83, 83, 252), rgb(250, 38, 38) );
+
+}
+.content{
+    border-radius: 15px;
+    background-color: white;
+    width: 960px;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border: 2px solid white;
+}
+.content::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgb(83, 83, 252), rgb(250, 38, 38) );
+    width: 40%;
+    border: 2px solid white;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    left: 0%;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-primary{
+    color: #fff;
+}
+.title-secundary{
+    color: blueviolet;
+}
+.description{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-primary{
+    color: #fff;
+}
+.description-second{
+    color:grey;
+}
+.btn{
+    border-radius: 15px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 1rem ;
+    align-self: center;
+    transition: background-color .5s;
+}
+.btn-primary{
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+    padding: 10px 50px;
+    width: 200px;
+    
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: blueviolet;
+}
+.btn-secund:hover{
+    background-color: #fff;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+.btn-secund{
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px 50px;
+    width: 200px; 
+}
+.first-content{
+    display: flex;
+   
+}
+.first-column{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+.first-content .second-column{
+    z-index: 12;
+}
+.second-column{
+    display: flex;
+    flex: 2 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media{
+    margin: 1rem 0 ;
+}
+.list-social-media{
+    display: flex;
+    list-style-type: none;
+}
+
+.item-social-media{
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width:35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #95a5a6;
+}
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+.link-social-media:hover .item-social-media{
+    background-color: blueviolet;
+    color: #fff;
+    border-color:blueviolet ;
+}
+.link-social-media .item-social-media{
+    transition: background-color .5s;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    text-align: center;
+}
+.form input{
+    height: 45px;
+    border: none;
+    background-color: #e2f2f7;
+    width: 100%;
+}
+.second-column{
+    display: flex;
+    flex: 2 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+.label-input{
+    background-color: #e2f2f7;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+.icon-modify{
+    color: grey;
+    padding: 0 5px;
+}
+
+.second-content{
+    position: absolute;
+    display: flex;
+}
+.second-content .first-column{
+    order: 2;
+    z-index: -1;
+}
+.second-content .second-column{
+    order: 1;
+    z-index: -1;
+}
+.password{
+    font-size: 14px;
+    color: grey;
+    margin: 10px 0;
+}
+
+
+.sign-in-js  .first-content  .first-column,
+.sign-in-js  .first-content  .second-column{
+    z-index: -1;
+}
+
+.sign-in-js  .second-content  .first-column,
+.sign-in-js  .second-content  .second-column{
+    z-index: 11;
+}
+
+.sign-in-js .content::before{
+    left: 60%;
+}
+
+.sign-up-js  .second-content  .first-column,
+.sign-up-js  .second-content  .second-column{
+    z-index: -1;
+}
+
+.sign-up-js  .first-content  .first-column,
+.sign-up-js  .first-content  .second-column{
+    z-index: 11;
+}
